@@ -1,4 +1,4 @@
-﻿using BenScr.Math.Random;
+﻿using BenScr.Random;
 
 public static class Program
 {

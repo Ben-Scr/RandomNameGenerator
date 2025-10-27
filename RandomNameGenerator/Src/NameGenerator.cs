@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace BenScr.Math.Random
+namespace BenScr.Random
 {
     public class NameGenerator
     {
