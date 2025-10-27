@@ -1,19 +1,29 @@
-﻿namespace RandomNameGenerator
+﻿using System.Reflection;
+
+namespace BenScr.Math.Random
 {
     public class NameGenerator
     {
         public static string[] firstNames;
         public static string[] lastNames;
 
-        private static readonly Random random = new Random();
+        private static readonly System.Random random = new System.Random();
 
         public NameGenerator()
         {
-            if (firstNames == null)
+            if (firstNames == null )
             {
-                firstNames = File.ReadAllLines("Resources/FirstNames.txt");
-                lastNames = File.ReadAllLines("Resources/LastNames.txt");
+                var assembly = Assembly.GetExecutingAssembly();
+                firstNames = ReadResourceLines(assembly, "RandomNameGenerator.Resources.FirstNames.txt");
+                lastNames = ReadResourceLines(assembly, "RandomNameGenerator.Resources.LastNames.txt");
             }
+        }
+
+        private static string[] ReadResourceLines(Assembly assembly, string resourceName)
+        {
+            using var stream = assembly.GetManifestResourceStream(resourceName);
+            using var reader = new StreamReader(stream);
+            return reader.ReadToEnd().Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public string FullName(int names = 1)

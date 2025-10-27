@@ -1,4 +1,4 @@
-﻿using RandomNameGenerator;
+﻿using BenScr.Math.Random;
 
 public static class Program
 {

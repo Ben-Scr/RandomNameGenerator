@@ -6,18 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Resources\FirstNames.txt" />
-    <None Remove="Resources\LastNames.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Resources\FirstNames.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\LastNames.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\FirstNames.txt" />
+		<EmbeddedResource Include="Resources\LastNames.txt" />
+	</ItemGroup>
 
 </Project>
