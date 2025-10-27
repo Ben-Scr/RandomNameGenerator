@@ -11,7 +11,7 @@ namespace BenScr.Random
 
         public NameGenerator()
         {
-            if (firstNames == null )
+            if (firstNames == null)
             {
                 var assembly = Assembly.GetExecutingAssembly();
                 firstNames = ReadResourceLines(assembly, "RandomNameGenerator.Resources.FirstNames.txt");
@@ -37,8 +37,16 @@ namespace BenScr.Random
             return fullName;
         }
 
-        public string FirstName() => firstNames[random.Next(firstNames.Length)];
-        public string LastName() => lastNames[random.Next(lastNames.Length)];
+        public string FirstName() => Capitalize(firstNames[random.Next(firstNames.Length)]);
+        public string LastName() => Capitalize(lastNames[random.Next(lastNames.Length)]);
+
+        private static string Capitalize(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            return char.ToUpper(input[0]) + input.Substring(1).ToLower();
+        }
 
         public int FirstNamesCount() => firstNames.Length;
         public int LastNamesCount() => lastNames.Length;
