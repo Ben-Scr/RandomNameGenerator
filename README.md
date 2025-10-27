@@ -3,7 +3,7 @@ A C# Project for generating random Names
 
 ## How to use
 ```csharp
-using namespace BenScr.Math.Random;
+using namespace BenScr.Random;
 ```
 ```csharp
 NameGenerator nameGenerator = new NameGenerator();
