@@ -11,3 +11,6 @@ Console.WriteLine(nameGenerator.FirstName());
 Console.WriteLine(nameGenerator.LastName());
 Console.WriteLine(nameGenerator.FullName(2));
 ```
+
+## Support
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/yourname)</p>
