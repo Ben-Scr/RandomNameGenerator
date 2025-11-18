@@ -6,21 +6,22 @@
     <Nullable>enable</Nullable>
 		
 		<PackageId>RandomNameGeneratorCS</PackageId>
-		<Version>1.0.4</Version>
+		<Version>1.0.5</Version>
 		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<Authors>Ben Schneider</Authors>
 		<Company>Ben Schneider</Company>
-		<Description>A Class for generating random names in C#</Description>
+		<Description>A package for generating random names in C#</Description>
 
 		<PackageProjectUrl>https://github.com/Ben-Scr/RandomNameGenerator</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Ben-Scr/RandomNameGenerator</RepositoryUrl>
+		<RepositoryUrl>https://ko-fi.com/benscr</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 
 		<PackageTags>
-			Name Generation;
 			Random;
+			Name;
+			Generation;
 		</PackageTags>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageReadmeFile>README.md</PackageReadmeFile>

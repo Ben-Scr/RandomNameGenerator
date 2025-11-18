@@ -2,7 +2,7 @@
 
 namespace BenScr.Random
 {
-    public class NameGenerator
+    public sealed class NameGenerator
     {
         public static string[] firstNames;
         public static string[] lastNames;
