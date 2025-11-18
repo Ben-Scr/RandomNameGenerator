@@ -1,5 +1,5 @@
 # Random Name Generator
-A C# Project for generating random Names
+A C# project for generating random names
 
 ## How to use
 ```csharp
