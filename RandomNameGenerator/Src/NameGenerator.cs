@@ -1,13 +1,13 @@
 ﻿using System.Reflection;
 
-namespace BenScr.Random
+namespace BenScr.RandomNameGenerator
 {
     public sealed class NameGenerator
     {
-        public static string[] firstNames;
-        public static string[] lastNames;
+        private static string[] firstNames;
+        private static string[] lastNames;
 
-        private static readonly System.Random random = new System.Random();
+        private static readonly Random random = new Random();
 
         public NameGenerator()
         {
@@ -48,7 +48,10 @@ namespace BenScr.Random
             return char.ToUpper(input[0]) + input.Substring(1).ToLower();
         }
 
-        public int FirstNamesCount() => firstNames.Length;
-        public int LastNamesCount() => lastNames.Length;
+        public static int FirstNamesCount() => firstNames.Length;
+        public static int LastNamesCount() => lastNames.Length;
+
+        public static string[] GetFirstNames() => firstNames;
+        public static string[] GetLastNames()  => lastNames;
     }
 }
