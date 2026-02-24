@@ -1,9 +1,9 @@
 # Random Name Generator
-A C# project for generating random names
+A C# library for generating random names
 
 ## How to use
 ```csharp
-using namespace BenScr.Random;
+using namespace BenScr.RandomNameGenerator;
 ```
 
 ```csharp
