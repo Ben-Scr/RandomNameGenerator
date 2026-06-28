@@ -16,7 +16,7 @@ Console.WriteLine(nameGenerator.LastName());
 Console.WriteLine(nameGenerator.FullName(2));
 ```
 
-### Possible Output
+### Output
 ```bash
 Erhan
 Clothey
