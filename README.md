@@ -2,10 +2,13 @@
 A C# library for generating random names
 
 ## How to use
+
+### Include
 ```csharp
-using namespace BenScr.RandomNameGenerator;
+using BenScr.RandomNameGenerator;
 ```
 
+### Functionality
 ```csharp
 NameGenerator nameGenerator = new NameGenerator();
 Console.WriteLine(nameGenerator.FirstName());
@@ -13,6 +16,9 @@ Console.WriteLine(nameGenerator.LastName());
 Console.WriteLine(nameGenerator.FullName(2));
 ```
 
-## Support
-[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/benscr)
-[![Linktree](https://img.shields.io/badge/Linktree-00C853?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/benscr)
+### Output
+```bash
+Erhan
+Clothey
+Lorela Hinal Motamed
+```
